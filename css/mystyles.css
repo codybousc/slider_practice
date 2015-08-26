@@ -1,0 +1,22 @@
+ #pics {
+  width: 4270px;
+  height: 375px;
+  position: absolute;
+  overflow: hidden;
+  }
+
+.image {
+  width: 600px;
+  height: 375px;
+  display: inline;
+  margin: 5px;
+  float: left;
+  postion: relative;
+  overflow: hidden;
+
+
+}
+
+body {
+  background-color: black;
+}
