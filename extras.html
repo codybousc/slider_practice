@@ -1,0 +1,59 @@
+'functioning Jquery (fades out first image and replaces it with second.
+only works for those two though)'
+
+$(document).ready(function() {
+  $("#nextButton").click(function() {
+    $("#one").fadeOut("slow")
+    $("#two").css("left", "0px")
+    $("#three").css("left", "610px")
+
+  });
+});
+
+
+
+<div id="pics">
+<div class="image" id="one">
+    <img src= "css/images/1.jpg" >
+</div>
+<div class="image" id="two">
+    <img src= "css/images/2.jpg">
+</div>
+<div class="image" id="three">
+    <img src= "css/images/3.jpg">
+</div>
+<div class="image" id="four">
+    <img src= "css/images/4.jpg">
+</div>
+<div class="image" id="five">
+    <img src= "css/images/5.jpg">
+</div>
+<div class="image" id="six">
+    <img src= "css/images/6.jpg">
+</div>
+<div class="image" id="seven">
+    <img src= "css/images/7.jpg">
+</div>
+</div>
+
+$(document).ready(function() {
+  $("#nextButton").click(function() {
+    var firstPhoto = document.getElementById("one");
+    //firstPhoto.setAttribute("style", "background-image: url(css/images/2.jpg)"); //works. just need to turn it into a 'general function' somehow
+    for(var i = 0; i < backgroundImages.length - 2; i++) {
+      firstPhoto.setAttribute("style", "background-image: url(css/images/"+ i +".jpg)"); //doesn't work yet
+    }
+//just switch out the url of the currSlide with the url of nextSlide!
+  });
+});
+
+$(document).ready(function() {
+  $("#nextButton").click(nextSlide)
+});
+
+$("#previousButton").click(function() {
+  var firstPhoto = document.getElementById("one");
+  for(var i = 0; i < backgroundImages.length - 2; i++) {
+    firstPhoto.setAttribute("style", "background-image: url(css/images/"+ (i) +".jpg)");
+  }
+});

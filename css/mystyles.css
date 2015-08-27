@@ -1,22 +1,101 @@
- #pics {
-  width: 4270px;
-  height: 375px;
-  position: absolute;
-  overflow: hidden;
+/*  #pics {
+ width: 610px;
+ height: 385px;
+ position: absolute;
+ left: 30%;
+ } */
+
+  .slideshow{
+    margin-top: 50px;
+    height: 375px;
+    width: 609px;
+    position: absolute;
+    left: 30%;
+    overflow: hidden;
+    /* height: 545px;
+    width: 1425px; */
   }
 
-.image {
+#one {
+  height: 385px;
+  width: 600px;
+}
+
+  #two {
+  left: 600px;
+  height: 385px;
+  width: 610px;
+}
+
+#three {
+  left: 1220px;
+  height: 385px;
+  width: 600px;
+}
+
+#four {
+  left: 1830px;
+  height: 385px;
+  width: 600px;
+}
+
+#five {
+  left: 2440px;
+}
+
+#six {
+  left: 3050px;
+}
+
+#seven {
+  left: 3660px;
+}
+
+  /* as soon as i set the #pics width to the same size as the pics, the pictures stack vertically. also,
+  when i alter the bottom margin, with 'overflow: hidden' removed, the pictures move up. when i place the 'overflow: hidden'
+  back in the pictures still move up but don't display?
+   */
+
+.slide {
   width: 600px;
   height: 375px;
   display: inline;
   margin: 5px;
   float: left;
-  postion: relative;
-  overflow: hidden;
-
-
+  position: absolute;
+  z-index: -1;
+  background-size: contain;
+  /*border: 1px solid white;*/
 }
 
 body {
   background-color: black;
+}
+
+#nextButton {
+  float: right;
+  margin-top: 200px;
+  margin-right: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 10px 75px;
+  text-decoration: none;
+  background-color: blue;
+  z-index: 1;
+}
+
+#previousButton {
+  float: left;
+  margin-top: 200px;
+  margin-left: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 10px 75px;
+  text-decoration: none;
+  background-color: blue;
+  z-index: 1;
 }
