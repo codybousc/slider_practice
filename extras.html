@@ -57,3 +57,42 @@ $("#previousButton").click(function() {
     firstPhoto.setAttribute("style", "background-image: url(css/images/"+ (i) +".jpg)");
   }
 });
+
+
+<a href="#" id="nextButton">Next</a>
+<a href="#" id="previousButton">Previous</a>
+
+My Functions
+
+// var j = 2; //moved ths var outside of the function and it now works!
+// //My nextSlide Function
+// function nextSlide() {
+//   //var i = 2;
+//   if (j < 8) {
+//   var firstPhoto = document.getElementById("one");
+//     //firstPhoto.setAttribute("style", "background-image: url(css/images/"+ j +".jpg)");
+//     TweenMax.to(slideshow, 0.65, {left: (-num * window.innerWidth) + 'px', ease: Expo.easeInOUt})
+//  //have to stack all images side by side for this to work.
+//     j++;
+//   }
+//   else if (j == 8) {
+//     //firstPhoto.setAttribute("style", "background-image: url(css/images/1.jpg)"); //breaks slider
+//       j = 1;
+//   }
+// }
+
+// //maybe find a more direct/cleaner way to access the currentPhoto variable.
+// function prevSlide() {
+//   var prevPhoto = document.getElementById("one");
+//   var firstPhotoAttr = prevPhoto.attributes[2]
+//   var nextAttrVal = firstPhotoAttr.value
+//   var currentPhoto = nextAttrVal[33]; //seems to be ahead by one
+//   var previousPhoto = currentPhoto - 1;
+//   if (currentPhoto > 1) {
+//     prevPhoto.setAttribute("style", "background-image: url(css/images/"+ previousPhoto +".jpg)");
+//     console.log(currentPhoto)
+//   }
+//   else if (currentPhoto == 1) { //starts the animation from zero once last pic is reached. slight bug though, have to click twice.
+//     prevPhoto.setAttribute("style", "background-image: url(css/images/"+ 7 +".jpg)");
+//   }
+// }

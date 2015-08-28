@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title></title>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/mystyles.css">
   </head>
   <body>
     <div id="wrapper"></div>
-    <a href="#" id="nextButton">Next</a>
-    <a href="#" id="previousButton">Previous</a>
+    <button type="button" class="btn btn-default" id="nextButton" aria-label="Right Align">
+      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+    </button>
+
+    <button type="button" class="btn btn-default" id="previousButton" aria-label="Left Align">
+      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+    </button>
 
     <script src="js/main.js"></script>
     <script src="js/TweenMax.min.js"></script>
